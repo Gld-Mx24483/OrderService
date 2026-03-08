@@ -13,6 +13,7 @@ OracleConfiguration.WalletLocation = "/Users/mac/Documents/Codes/Wallet_DEVDB";
 builder.Services.AddOpenApi();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IdRepository, DbRepository>();
+builder.Services.AddScoped<IEventPublisher, KafkaEventPublisher>();
 
 var app = builder.Build();
 

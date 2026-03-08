@@ -16,6 +16,38 @@ namespace OrderServiceApi.Api.Data.Repository.Implementation
             _logger = logger;
         }
 
+        public async Task<int> OrderShippedResponseAsync(ShipOrderRequest order)
+        {
+            try
+            {
+                using(var db = new OracleConnection(dbConnection))
+                {
+                    await db.OpenAsync();
+                    var query = @"UPDATE ORDERS
+                             SET Status = 'Shipped',
+                                 TrackingNumber = :TrackingNumber,
+                                 EstimatedDeliveryDate = :EstimatedDeliveryDate
+                             WHERE OrderId = :OrderId
+                             AND CustomerId = :CustomerId
+                             AND CustomerEmail = :CustomerEmail";
+                    var result = await db.ExecuteAsync(query, new
+                    {
+                        OrderId = order.orderId,
+                        TrackingNumber = order.trackingNumber,
+                        EstimatedDeliveryDate = order.estimatedDeliveryDate,
+                        CustomerId = order.customerId,
+                        CustomerEmail = order.customerEmail
+                    });
+                    return result;
+                }
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError($"Error updating order with ID, {order.orderId} ==> {ex.Message}");
+                return 0;
+            }
+        }
+
         public async Task<int> CancelOrderAsync(CancelOrder order)
         {
             try

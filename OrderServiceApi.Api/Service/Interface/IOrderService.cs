@@ -7,5 +7,6 @@ namespace OrderServiceApi.Api.Service.Interface
     {
         Task<OrderCreationResponse> CreateOrder(CreateOrderRequest order);
         Task<OrderCancelledResponse> CancleOrder(CancelOrder order);
+        Task<OrderShippedResponse> ShipOrder(ShipOrderRequest order);
     }
 }

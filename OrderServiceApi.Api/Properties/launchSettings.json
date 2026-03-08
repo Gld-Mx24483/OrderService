@@ -7,7 +7,9 @@
       "launchBrowser": false,
       "applicationUrl": "http://localhost:5014",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DatabaseConnection": "User Id=ADMIN;Password=Goldenm@trix24483;Data Source=devdb_tp;",
+        "KafkaTopicName": "order-events"
       }
     },
     "https": {
@@ -17,7 +19,11 @@
       "applicationUrl": "https://localhost:7290;http://localhost:5014",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "DatabaseConnection": "User Id=ADMIN;Password=Goldenm@trix24483;Data Source=devdb_tp;"
+        "DatabaseConnection": "User Id=ADMIN;Password=Goldenm@trix24483;Data Source=devdb_tp;",
+        "KafkaTopicName": "qsp.notifications",
+        "KafkaBootstrapServers": "pkc-921jm.us-east-2.aws.confluent.cloud:9092",
+        "SaslUsername":"7TJ2MZQOSHUPSBC7",
+        "SaslPassword":"cflttVOctgUnZnr93BAdJLIoG4SZB0lM+eCjBb4/BI5p5I4Z1UbdXjwy3CSTQV5Q"
       }
     }
   }
