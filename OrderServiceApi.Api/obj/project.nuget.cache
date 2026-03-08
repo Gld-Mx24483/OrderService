@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rA7d1k9HG0c=",
+  "dgSpecHash": "37UPlqbTIzQ=",
   "success": true,
-  "projectFilePath": "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
+  "projectFilePath": "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
   "expectedPackageFiles": [
     "/Users/mac/.nuget/packages/confluent.kafka/2.13.2/confluent.kafka.2.13.2.nupkg.sha512",
     "/Users/mac/.nuget/packages/dapper/2.1.72/dapper.2.1.72.nupkg.sha512",

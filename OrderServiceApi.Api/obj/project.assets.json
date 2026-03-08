@@ -716,7 +716,7 @@
       "Confluent.Kafka >= 2.13.2",
       "Dapper >= 2.1.72",
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
-      "Newtonsoft.json >= 13.0.4",
+      "Newtonsoft.Json >= 13.0.4",
       "Oracle.ManagedDataAccess.Core >= 23.26.100",
       "Scalar.AspNetCore >= 2.13.1"
     ]
@@ -727,11 +727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
+      "projectUniqueName": "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
       "projectName": "OrderServiceApi.Api",
-      "projectPath": "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
+      "projectPath": "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
       "packagesPath": "/Users/mac/.nuget/packages/",
-      "outputPath": "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/obj/",
+      "outputPath": "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mac/.nuget/NuGet/NuGet.Config"
@@ -776,7 +776,7 @@
             "target": "Package",
             "version": "[10.0.1, )"
           },
-          "Newtonsoft.json": {
+          "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
           },

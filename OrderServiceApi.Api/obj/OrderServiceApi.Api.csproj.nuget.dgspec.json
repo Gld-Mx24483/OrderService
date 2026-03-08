@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj": {}
+    "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj": {}
   },
   "projects": {
-    "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj": {
+    "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
+        "projectUniqueName": "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
         "projectName": "OrderServiceApi.Api",
-        "projectPath": "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
+        "projectPath": "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/OrderServiceApi.Api.csproj",
         "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/Documents/Codes/OrderService/OrderServiceApi.Api/obj/",
+        "outputPath": "/Users/mac/Documents/Codes/OrderManagementService/OrderService/OrderServiceApi.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mac/.nuget/NuGet/NuGet.Config"
