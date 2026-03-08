@@ -17,14 +17,15 @@ namespace OrderServiceApi.Api.Service.Implementation
 
         public KafkaEventPublisher(ILogger<KafkaEventPublisher> logger)
         {
-            _producer = new ProducerBuilder<string, string>(new ProducerConfig
+            var producerConfig = new ProducerConfig
             {
                 BootstrapServers = bootstrapServers,
                 SecurityProtocol = SecurityProtocol.SaslSsl,
                 SaslMechanism    = SaslMechanism.Plain,
                 SaslUsername     = saslUsername,
                 SaslPassword     = saslPassword
-            }).Build();
+            };
+            _producer = new ProducerBuilder<string, string>(producerConfig).Build();
             _logger = logger;
         }
 
