@@ -4,10 +4,10 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
-COPY ["src/OrderServiceApi.Api/OrderServiceApi.Api.csproj", "src/OrderServiceApi.Api/"]
-RUN dotnet restore "src/OrderServiceApi.Api/OrderServiceApi.Api.csproj"
+COPY ["OrderServiceApi.Api/OrderServiceApi.Api.csproj", "OrderServiceApi.Api/"]
+RUN dotnet restore "OrderServiceApi.Api/OrderServiceApi.Api.csproj"
 COPY . .
-WORKDIR "/src/src/OrderServiceApi.Api"
+WORKDIR "/src/OrderServiceApi.Api"
 RUN dotnet build "OrderServiceApi.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
