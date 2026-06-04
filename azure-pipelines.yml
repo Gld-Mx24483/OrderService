@@ -10,8 +10,10 @@ variables:
   apiName: 'OrderServiceApi.Api'
   namespace: 'default'
   dockerfilePath: 'Dockerfile'
+
   devEnv: 'dev'
   uatEnv: 'uat'
+
   acrRegistry: 'tokiacr'
   imageNameDev: 'tokiacr-order-service-dev'
   imageNameUat: 'tokiacr-order-service-uat'
